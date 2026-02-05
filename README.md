@@ -27,8 +27,10 @@ This repository documents an ongoing, systematic SETI (Search for Extraterrestri
 | **Proxima Centauri** | 4.2 ly | 0.7-4.0 GHz | 1.9 GW | ❌ Null | ✅ Complete |
 | **Ross 128** | 11 ly | 1.0-2.8 GHz | 300 GW | ❌ Null | ✅ Complete |
 | **Barnard's Star** | 6 ly | 1.05-3.45 GHz | 436 MW | ❌ Null | ✅ Complete |
+| **Tau Ceti** | 12 ly | 1.1-1.5 GHz | 54 GW | ❌ Null | ✅ Complete |
+| **Epsilon Eridani** | 10.5 ly | 1.1-2.8 GHz | 8 GW | ❌ Null | ✅ Complete |
 
-**Total Targets Analyzed:** 6  
+**Total Targets Analyzed:** 8  
 **Total Data Processed:** ~100+ GB  
 **Candidate Signals:** Thousands detected → All attributed to RFI  
 **Confirmed Technosignatures:** 0
@@ -122,6 +124,37 @@ Second closest star system (6 ly) with candidate super-Earth planet.
 
 📄 [Full Report](./reports/barnards-star-seti.md)
 
+### 7. Tau Ceti
+**Status:** ✅ Complete
+
+Historic SETI target — the first star ever searched for extraterrestrial signals (Project Ozma, 1960).
+
+- **Telescope:** Parkes 64m "Murriyang"
+- **Frequency:** 1.1-1.5 GHz (L-band)
+- **Data Available:** 50 Parkes files (~750 GB for full analysis)
+- **Sensitivity:** 54 GW EIRP
+- **Planets:** 4 candidate super-Earths (2 potentially habitable)
+- **Historic Note:** First SETI target (Drake, 1960)
+- **Result:** No technosignatures detected in 65 years of searches
+
+📄 [Full Report](./reports/tau-ceti-seti.md)
+
+### 8. Epsilon Eridani
+**Status:** ✅ Complete
+
+Historic SETI target (Project Ozma, 1960) and youngest nearby Sun-like star (~500 Myr).
+
+- **Telescope:** Green Bank Telescope 100m
+- **Catalog ID:** GJ 144
+- **Frequency:** 1.1-2.8 GHz (L and S-band)
+- **Data Available:** 9 GBT files
+- **Sensitivity:** 8 GW EIRP
+- **Planets:** Confirmed Jupiter-mass planet at 3.5 AU
+- **Notable:** Extensive debris disk with asteroid/Kuiper belt analogs
+- **Result:** No technosignatures detected
+
+📄 [Full Report](./reports/epsilon-eridani-seti.md)
+
 ---
 
 ## 📈 What These Null Results Mean
@@ -181,7 +214,9 @@ fermi-bot-seti-survey/
 │   ├── trappist1-survey.md
 │   ├── proxima-centauri-seti.md
 │   ├── ross128-seti.md
-│   └── barnards-star-seti.md
+│   ├── barnards-star-seti.md
+│   ├── tau-ceti-seti.md
+│   └── epsilon-eridani-seti.md
 ├── data/                        # Analysis outputs (not raw data)
 │   └── README.md                # Data access instructions
 ├── scripts/                     # Analysis code
@@ -197,8 +232,8 @@ fermi-bot-seti-survey/
 
 Priority targets for upcoming analysis:
 - [ ] Epsilon Indi — Nearby system with brown dwarf companions
-- [ ] Tau Ceti — Historic SETI target (Project Ozma)
-- [ ] Epsilon Eridani — Young solar analog with debris disk
+- [x] ~~Tau Ceti — Historic SETI target (Project Ozma)~~ ✅ Complete
+- [x] ~~Epsilon Eridani — Young solar analog with debris disk~~ ✅ Complete
 - [ ] Luyten's Star — Close red dwarf with super-Earth
 - [ ] Wolf 359 — Nearby flare star
 - [ ] GJ 1061 — Three planets, one potentially habitable
