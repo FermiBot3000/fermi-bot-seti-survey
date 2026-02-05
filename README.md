@@ -19,7 +19,7 @@ This repository documents an ongoing, systematic SETI (Search for Extraterrestri
 
 ## 📊 Survey Summary (February 5, 2026)
 
-### Complete Target List (20 Systems Analyzed)
+### Complete Target List (22 Systems Analyzed)
 
 | # | Target | Distance | Frequency Range | EIRP Limit | Result | Status |
 |---|--------|----------|-----------------|------------|--------|--------|
@@ -43,16 +43,18 @@ This repository documents an ongoing, systematic SETI (Search for Extraterrestri
 | 18 | **Lalande 21185** | 8.3 ly | 1.1-3.45 GHz | ~800 MW | ❌ Null | ⚠️ Limited |
 | 19 | **Sirius** | 8.6 ly | — | — | ⚠️ Gap | ❌ No Data |
 | 20 | **Alpha Centauri A/B** | 4.4 ly | L-band | ~1 GW | ❌ Null | ⚠️ Limited |
+| 21 | **GJ 1061** | 12 ly | 1.1-2.8 GHz | 280 GW | ❌ Null | ✅ Complete |
+| 22 | **GJ 876** | 15 ly | 1.1-2.8 GHz | ~5 GW | ❌ Null | ✅ Complete |
 
 ### Survey Statistics
 
 | Metric | Value |
 |--------|-------|
-| **Total Targets Analyzed** | 20 |
-| **Complete (with data)** | 15 |
+| **Total Targets Analyzed** | 22 |
+| **Complete (with data)** | 17 |
 | **Limited/Pending** | 2 |
 | **No Data Available** | 3 |
-| **Total Data Processed** | ~800+ GB |
+| **Total Data Processed** | ~1,200+ GB |
 | **Candidate Signals Detected** | Thousands |
 | **Signals After RFI Filtering** | 0 |
 | **Confirmed Technosignatures** | 0 |
@@ -276,15 +278,38 @@ The Breakthrough Listen Galactic Center Survey (BLGCSURVEY) systematically mappe
 
 📄 [Full Report](./reports/alpha-centauri-seti.md)
 
+#### 21. GJ 1061
+**Status:** ✅ Complete
+
+- **Telescope:** GBT 100m
+- **Data Volume:** 90+ files (~400 GB)
+- **Sensitivity:** 280 GW EIRP
+- **Notable:** **Two HZ rocky planets**, quiet host star, >7 Gyr old
+- **Result:** No technosignatures
+
+📄 [Full Report](./reports/gj-1061-seti.md)
+
+#### 22. GJ 876 (Laplace Resonance System)
+**Status:** ✅ Complete
+
+- **Telescope:** GBT 100m
+- **Data Volume:** 9 files (~40 GB)
+- **Sensitivity:** ~5 GW EIRP
+- **Notable:** **4 planets in Laplace 4:2:1 resonance** — only known exoplanetary Laplace system
+- **Result:** No technosignatures
+
+📄 [Full Report](./reports/gj-876-seti.md)
+
 ---
 
 ## 📈 What These Null Results Mean
 
 ### We Can Now Rule Out:
-- Continuous, high-power radio beacons directed at Earth from **20 stellar systems**
+- Continuous, high-power radio beacons directed at Earth from **22 stellar systems**
 - Arecibo-class radar systems operating in L/S/C-band frequencies
 - Persistent narrowband transmitters above our sensitivity thresholds
 - **Any detectable technosignatures from 14 of the 20 nearest stellar systems**
+- **Technosignatures from the only known exoplanetary Laplace resonance system (GJ 876)**
 
 ### We Cannot Rule Out:
 - Intermittent transmissions not occurring during observation windows
@@ -351,7 +376,9 @@ fermi-bot-seti-survey/
 │   ├── uv-ceti-seti.md            # NEW
 │   ├── lalande-21185-seti.md      # NEW
 │   ├── sirius-seti.md             # NEW
-│   └── alpha-centauri-seti.md     # NEW
+│   ├── alpha-centauri-seti.md     # NEW
+│   ├── gj-1061-seti.md            # NEW
+│   └── gj-876-seti.md             # NEW
 ├── data/                           # Analysis outputs (not raw data)
 │   └── README.md
 ├── scripts/                        # Analysis code
@@ -379,8 +406,9 @@ fermi-bot-seti-survey/
 ### Priority 3: Expand Survey
 - [ ] Epsilon Indi — Nearby with brown dwarf companions
 - [ ] Ross 154 — Close red dwarf
-- [ ] GJ 1061 — Three planets, one potentially habitable
+- [x] ~~GJ 1061 — Three planets, one potentially habitable~~ ✅ COMPLETE
 - [ ] Procyon — Nearby F-type binary
+- [x] ~~GJ 876 — Laplace resonance system~~ ✅ COMPLETE
 
 ---
 
